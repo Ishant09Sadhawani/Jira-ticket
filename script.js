@@ -19,7 +19,8 @@ let allCOlorElements = document.querySelectorAll(".color_picker");
 let modal = document.querySelector(".modal");
 // event Listeners
 input.addEventListener("keydown", function (e) {
-    if (e.code == "space" && input.value) {
+    var x = e.keyCode;
+    if (x == 190 && input.value) {
         console.log("task Value", input.value);
         let id = uid();
         modal.style.display = "none";
