@@ -20,7 +20,7 @@ let modal = document.querySelector(".modal");
 // event Listeners
 input.addEventListener("keydown", function (e) {
     var x = e.keyCode;
-    if (x == 190 && input.value) {
+    if (x == 48 && input.value) {
         console.log("task Value", input.value);
         let id = uid();
         modal.style.display = "none";
